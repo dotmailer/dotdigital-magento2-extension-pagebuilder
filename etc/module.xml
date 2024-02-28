@@ -3,6 +3,7 @@
     <module name="Dotdigitalgroup_PageBuilder">
         <sequence>
             <module name="Dotdigitalgroup_Email" />
+            <module name="Magento_Backend" />
         </sequence>
     </module>
 </config>
