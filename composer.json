@@ -1,6 +1,6 @@
 {
     "name": "dotdigital/dotdigital-magento2-extension-pagebuilder",
-    "description": "Dotdigital page builder extension",
+    "description": "Dotdigital for Magento 2: Page Builder module",
     "license": "MIT",
     "version": "1.0.0",
     "type": "magento2-module",
@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": "^7.4||^8.0",
-        "dotdigital/dotdigital-magento2-extension": "^4.24.0",
+        "dotdigital/dotdigital-magento2-extension": "^4.19.0",
         "magento/module-page-builder": ">=1.0.0",
         "magento/framework": ">=102 <104"
     },

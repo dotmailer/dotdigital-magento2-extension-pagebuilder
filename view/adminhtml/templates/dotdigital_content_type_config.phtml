@@ -1,0 +1,23 @@
+<?php
+/**
+ * @var Dotdigitalgroup\PageBuilder\Block\DotdigitalForm $block
+ */
+?>
+<script>
+    require.config({
+        config: {
+            'Dotdigitalgroup_PageBuilder/js/content-type/dotdigitalgroup-form/preview': {
+                isDDGEnabled: '<?= $block->escapeJs($block->isEnabled()); ?>',
+                apiErrorMessage: '<?= $block->escapeJs($block->getActivationMessage()); ?>',
+                ddgFormDataUrl: '<?= $block->escapeJs(
+                    $block->getUrl('dotdigitalgroup_pagebuilder/ajax/formdata')
+                ); ?>'
+            },
+            'Dotdigitalgroup_PageBuilder/js/form/element/form-select': {
+                ddgFormOptionsUrl: '<?= $block->escapeJs(
+                    $block->getUrl('dotdigitalgroup_pagebuilder/ajax/formoptions')
+                ); ?>'
+            },
+        }
+    });
+</script>
