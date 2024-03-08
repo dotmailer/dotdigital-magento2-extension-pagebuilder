@@ -1,20 +1,24 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Dotdigital Page Builder for Magento 2 (Magento Open Source and Adobe Commerce)
+[![Packagist Version](https://img.shields.io/packagist/v/dotdigital/dotdigital-magento2-extension-pagebuilder?color=green&label=stable)](https://github.com/dotmailer/dotmailer-magento2-extension-sms/releases)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE.md)
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Overview
+This module adds a 'Dotdigital form' content type to Page Builder. Merchants can use this content type to embed surveys, pages and forms from Dotdigital.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Requirements
+- An active Dotdigital account.
+- Dotdigital extension versions:
+    - `Dotdigitalgroup_Email` 4.14.0+
+- PHP 7.4+
+- Magento 2.3.7+
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Activation
+- This module is included in our core extension. Please refer to [these instructions](https://github.com/dotmailer/dotmailer-magento2-extension#installation) to install via the Magento Marketplace.
+- Ensure you have set valid API credentials in **Configuration > Dotdigital > Account Settings**
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Changelog
+
+### 1.0.0
+
+##### What’s new
+- Merchants on Magento Open Source v2.4.0+ (as well as those on Adobe Commerce) can use our 'Dotdigital form' content type in Page Builder.
