@@ -18,6 +18,11 @@ This module adds a 'Dotdigital form' content type to Page Builder. Merchants can
 
 ## Changelog
 
+### 1.0.1
+
+##### Bug fixes
+- We fixed a regression that prevented popover display on mobile devices.
+
 ### 1.0.0
 
 ##### What’s new

@@ -112,8 +112,8 @@ class FormManagement implements FormManagementInterface
             'attach' => "#{$formAttachment}",
             'delay' => (int) $postContent->show_after,
             'appearance' =>  $postContent->appearances,
-            'keydismiss' => (bool) $postContent->enable_use_esc,
-            'mobile' => (bool) $postContent->show_mobile,
+            'keydismiss' => $postContent->enable_use_esc,
+            'mobile' => $postContent->show_mobile,
             'sharing' => $scriptSharing,
             'auto' => !($postContent->form_style === 'embedded')
         ];
