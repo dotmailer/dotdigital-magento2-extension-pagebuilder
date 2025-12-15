@@ -65,7 +65,7 @@
         <data key="value">false</data>
     </entity>
     <entity name="DotdigitalFormSettings_UseOfEsc" type="dotdigital_form_field_property">
-        <data key="name">Enable use of 'Esc' to dismiss pop-over</data>
+        <data key="name">Enable use of 'Esc' to dismiss popup</data>
         <data key="section">general</data>
         <data key="fieldName">enable_use_esc</data>
         <data key="value">true</data>

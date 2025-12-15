@@ -34,7 +34,7 @@
                 </item>
                 <item name="1" xsi:type="array">
                     <item name="value" xsi:type="string">popover</item>
-                    <item name="title" xsi:type="string" translate="true">Pop-over</item>
+                    <item name="title" xsi:type="string" translate="true">Popup</item>
                 </item>
             </argument>
         </arguments>

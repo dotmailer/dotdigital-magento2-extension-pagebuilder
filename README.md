@@ -18,12 +18,17 @@ This module adds a 'Dotdigital form' content type to Page Builder. Merchants can
 
 ## Changelog
 
+### 1.0.2
+
+##### Improvements
+- We updated our naming convention from ‘popover’ to ‘popup’.
+
 ### 1.0.1
 
 ##### Bug fixes
-- We fixed a regression that prevented popover display on mobile devices.
+- We fixed a regression that prevented popup display on mobile devices.
 
 ### 1.0.0
 
 ##### What’s new
-- Merchants on Magento Open Source v2.4.0+ (as well as those on Adobe Commerce) can use our 'Dotdigital form' content type in Page Builder.
+- Merchants on Magento Open Source v2.4.3+ (as well as those on Adobe Commerce) can use our 'Dotdigital form' content type in Page Builder.

@@ -96,7 +96,7 @@ define([
                 if (data.form_style === 'embedded') {
                     this.placeholderText('The form "' + data.form_name + '" will be embedded.');
                 } else if (data.form_style === 'popover') {
-                    this.placeholderText('The form "' + data.form_name + '" will be displayed as a pop-over after ' + data.show_after + ' seconds.');
+                    this.placeholderText('The form "' + data.form_name + '" will be displayed as a popup after ' + data.show_after + ' seconds.');
                 } else {
                     this.placeholderText(this.messages.NOT_SELECTED);
                 }
