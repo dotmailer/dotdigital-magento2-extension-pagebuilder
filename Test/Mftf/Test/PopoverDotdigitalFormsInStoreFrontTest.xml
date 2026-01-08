@@ -6,7 +6,7 @@
         <annotations>
             <features value="Dotdigital for Magento Commerce module"/>
             <stories value="Dotdigital form content type for Page Builder"/>
-            <title value="The correct pop-over form is visible on the store front"/>
+            <title value="The correct popup form is visible on the store front"/>
             <description value="A form that is selected, with 'Pop-over' style, is visible after save on the store front."/>
             <severity value="AVERAGE"/>
             <group value="dotdigitalCommerce"/>
