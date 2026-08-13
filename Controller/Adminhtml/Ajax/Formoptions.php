@@ -4,9 +4,9 @@ namespace Dotdigitalgroup\PageBuilder\Controller\Adminhtml\Ajax;
 
 use Dotdigitalgroup\PageBuilder\Api\Data\FormOptionInterface;
 use Dotdigitalgroup\PageBuilder\Api\FormManagementInterface;
+use Dotdigitalgroup\PageBuilder\Model\Form\FormOption;
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
-use Magento\Framework\Api\AbstractSimpleObject;
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\Controller\Result\Json;
 use Magento\Framework\Controller\Result\JsonFactory;
@@ -57,7 +57,7 @@ class Formoptions extends Action implements HttpGetActionInterface
 
         foreach ($response as $i => $item) {
             if ($item instanceof FormOptionInterface) {
-                /** @var AbstractSimpleObject $item */
+                /** @var FormOption $item */
                 $response[$i] = $item->__toArray();
             }
         }
