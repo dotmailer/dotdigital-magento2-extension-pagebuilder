@@ -1,20 +1,21 @@
 <?php
 /**
  * @var Dotdigitalgroup\PageBuilder\Block\DotdigitalForm $block
+ * @var $escaper \Magento\Framework\Escaper
  */
 ?>
 <script>
     require.config({
         config: {
             'Dotdigitalgroup_PageBuilder/js/content-type/dotdigitalgroup-form/preview': {
-                isDDGEnabled: '<?= $block->escapeJs($block->isEnabled()); ?>',
-                apiErrorMessage: '<?= $block->escapeJs($block->getActivationMessage()); ?>',
-                ddgFormDataUrl: '<?= $block->escapeJs(
+                isDDGEnabled: '<?= $escaper->escapeJs($block->isEnabled()); ?>',
+                apiErrorMessage: '<?= $escaper->escapeJs($block->getActivationMessage()); ?>',
+                ddgFormDataUrl: '<?= $escaper->escapeJs(
                     $block->getUrl('dotdigitalgroup_pagebuilder/ajax/formdata')
                 ); ?>'
             },
             'Dotdigitalgroup_PageBuilder/js/form/element/form-select': {
-                ddgFormOptionsUrl: '<?= $block->escapeJs(
+                ddgFormOptionsUrl: '<?= $escaper->escapeJs(
                     $block->getUrl('dotdigitalgroup_pagebuilder/ajax/formoptions')
                 ); ?>'
             },
