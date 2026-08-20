@@ -8,27 +8,11 @@ This module adds a 'Dotdigital form' content type to Page Builder. Merchants can
 ## Requirements
 - An active Dotdigital account.
 - Dotdigital extension versions:
-    - `Dotdigitalgroup_Email` 4.14.0+
+    - `Dotdigitalgroup_Email` 4.33.0+
 - PHP 7.4+
-- Magento 2.3.7+
+- Magento 2.4.2+
+    - Magento 2.3.7, 2.4.0 and 2.4.1 are compatible up to version 1.0.2
 
 ## Activation
 - This module is included in our core extension. Please refer to [these instructions](https://github.com/dotmailer/dotmailer-magento2-extension#installation) to install via the Magento Marketplace.
 - Ensure you have set valid API credentials in **Configuration > Dotdigital > Account Settings**
-
-## Changelog
-
-### 1.0.2
-
-##### Improvements
-- We updated our naming convention from ‘popover’ to ‘popup’.
-
-### 1.0.1
-
-##### Bug fixes
-- We fixed a regression that prevented popup display on mobile devices.
-
-### 1.0.0
-
-##### What’s new
-- Merchants on Magento Open Source v2.4.3+ (as well as those on Adobe Commerce) can use our 'Dotdigital form' content type in Page Builder.

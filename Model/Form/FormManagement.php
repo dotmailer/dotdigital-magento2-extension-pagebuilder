@@ -2,11 +2,11 @@
 
 namespace Dotdigitalgroup\PageBuilder\Model\Form;
 
+use Dotdigitalgroup\Email\Helper\Data;
 use Dotdigitalgroup\PageBuilder\Api\Data\FormDataInterface;
 use Dotdigitalgroup\PageBuilder\Api\Data\FormDataInterfaceFactory;
 use Dotdigitalgroup\PageBuilder\Api\Data\FormOptionInterfaceFactory;
 use Dotdigitalgroup\PageBuilder\Api\FormManagementInterface;
-use Dotdigitalgroup\Email\Helper\Data;
 use Magento\Framework\Webapi\Rest\Request;
 
 class FormManagement implements FormManagementInterface
@@ -34,7 +34,7 @@ class FormManagement implements FormManagementInterface
     /**
      * @var Request
      */
-    protected $request;
+    private $request;
 
     /**
      * @param Data $data
@@ -99,8 +99,8 @@ class FormManagement implements FormManagementInterface
         $scriptDomain = $this->extractDomain($ECForm->url);
 
         $scriptSrc = $postContent->form_style === 'embedded' ?
-                    '//'. $scriptDomain . self::EMBEDDED_URL :
-                    '//'. $scriptDomain . self::POPOVER_URL;
+                    '//' . $scriptDomain . self::EMBEDDED_URL :
+                    '//' . $scriptDomain . self::POPOVER_URL;
 
         $scriptSharing = ($postContent->form_style === 'embedded') ?
                     self::FORM_SHARING_EMBED :
