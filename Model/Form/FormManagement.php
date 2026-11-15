@@ -90,7 +90,7 @@ class FormManagement implements FormManagementInterface
         $client = $this->helper->getWebsiteApiClient($postContent->account_select);
         $ECForm = $client->getFormById($formId);
 
-        if (!$ECForm) {
+        if (!$ECForm || !isset($ECForm->url)) {
             return null;
         }
 
