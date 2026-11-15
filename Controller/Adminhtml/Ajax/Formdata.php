@@ -57,8 +57,8 @@ class Formdata extends Action implements HttpPostActionInterface
 
         $resultJson = $this->resultJsonFactory->create();
 
-        /** @var FormDataModel $formData */
-        $resultJson->setData($formData->__toArray());
+        /** @var FormDataModel|null $formData */
+        $resultJson->setData($formData ? $formData->__toArray() : []);
 
         return $resultJson;
     }
